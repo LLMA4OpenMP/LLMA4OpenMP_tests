@@ -2,11 +2,13 @@
 
 To test these programs, clone the [LLNL/AutoParBench](https://github.com/LLNL/AutoParBench) repository, it contains the environments needed for compilation.
 
-You can make a copy of any folder inside the "benchmarks" folder, for example, Autopar. And copy each ".c" file to its corresponding location, like bt.c to "benchmark/the_folder_you_copied/NPB3.0-omp-c/BT/bt.c"
+Enter the "AutoParBench" folder.
 
-Then copy the "make.def" to "benchmark/the_folder_you_copied/NPB3.0-omp-c/config/make.def"
+You can make a copy of the "sequential" folder inside the "benchmarks" folder, for example, "cp -r benchmarks/sequential benchmarks/test". And copy each ".c" file to its corresponding location, for example, copy "bt.c" to "benchmarks/test/NPB3.0-omp-c/BT/bt.c"
 
-Then you can compile and run the code. (AutoParBench defaults to class A when compiling, you can change that in "benchmark/the_folder_you_copied/NPB3.0-omp-c/Makefile")
+Then copy the "make.def" to "benchmarks/test/NPB3.0-omp-c/config/make.def"
+
+Then you can compile and run the code. (AutoParBench defaults to class A when compiling, you can change that in "benchmarks/test/NPB3.0-omp-c/Makefile")
 
 ```bash
 mkdir bin
